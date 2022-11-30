@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FastcvView</string>
+    <string name="into_native_view_ui">into Native View UI</string>
+    <string name="into_customize_view_ui">Into customize View UI</string>
+</resources>
