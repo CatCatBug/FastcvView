@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll_view"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_coordinate_system" />
+
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_screen_area" />
+
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_deg_and_rad" />
+
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_colors" />
+
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_unit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/slide" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide_desc" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_min_distance"
+            style="@style/Paragraph" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/slide_x_measure_speed"
+            style="@style/Paragraph" />
+
+        <cc.fastcv.view.customize.theoreticalBasis.custom.SimpleSpeedometer
+            android:layout_width="match_parent"
+            android:id="@+id/ss_slide"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_item_bg" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_speed"
+            style="@style/Paragraph" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

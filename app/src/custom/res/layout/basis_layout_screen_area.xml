@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/screen_area" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/Paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/screen_area_desc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status_bar" />
+
+        <cc.fastcv.view.customize.theoreticalBasis.custom.PressableTextView
+            android:id="@+id/tv_show_statusbar"
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_bt_bg"
+            android:gravity="center"
+            android:text="@string/press_to_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar" />
+
+        <cc.fastcv.view.customize.theoreticalBasis.custom.PressableTextView
+            android:id="@+id/tv_show_toolbar"
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_bt_bg"
+            android:gravity="center"
+            android:text="@string/press_to_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/content" />
+
+        <cc.fastcv.view.customize.theoreticalBasis.custom.PressableTextView
+            android:id="@+id/tv_show_content"
+            style="@style/Paragraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/selector_main_bt_bg"
+            android:gravity="center"
+            android:text="@string/press_to_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/navigationbar" />
+
+        <cc.fastcv.view.customize.theoreticalBasis.custom.PressableTextView
+            android:id="@+id/tv_show_navigationbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="5dp"
+            android:background="@drawable/selector_main_bt_bg"
+            android:gravity="center"
+            android:text="@string/press_to_show" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/status_bar_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:id="@+id/tv_statusbar_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:id="@+id/tv_toolbar_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/content_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:id="@+id/tv_content_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/navigationbar_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:id="@+id/tv_navigationbar_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_display_size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Paragraph"
+            android:id="@+id/tv_display_size"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

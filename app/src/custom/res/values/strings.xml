@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coordinate_system">坐标系</string>
+    <string name="coordinate_system_desc">在安卓中，坐标系分为两种，一种是基于屏幕的坐标系，一种是在view（viewgroup）中的坐标系。
+        \n与我们理解的坐标系不同的是，安卓坐标系的x轴向右为正方向，y轴向下为正方向。原点为view本身的左上角，屏幕的原点是屏幕的左上角。
+        \n如下，点击可得到在屏幕中的位置和在View中的位置：</string>
+    <string name="position_in_screen">屏幕中：</string>
+    <string name="position_in_view">View中：</string>
+    <string name="screen_area">屏幕区域</string>
+    <string name="screen_area_desc">为了更好的在屏幕上展示更多的内容（移动设备的屏幕不可能做的和PC一样，所以要更合理的利用空间去展示更多的内容）
+        ，将屏幕分为了以下几个区域：</string>
+    <string name="status_bar">- 状态栏</string>
+    <string name="press_to_show">按住此处凸显</string>
+    <string name="toolbar">- ToolBar</string>
+    <string name="content">- 内容显示区域</string>
+    <string name="navigationbar">- 导航栏</string>
+    <string name="deg_and_rad">角度与弧度</string>
+    <string name="deg_and_rad_desc">简单来说就是为了方便，为了精确描述一个角的大小引入了角度与弧度的概念。\n
+        由于两者进制是不同的(角度是60进制，弧度是10进制),在合适的地方使用合适的单位来描述会更加方便。\n
+    圆一周对应的角度为360度(角度)，对应的弧度为2π弧度。\n
+    需要注意的一点是，我们说的正方向旋转，在数学坐标系中是逆时针旋转的，而在安卓坐标系中是顺时针旋转的。</string>
+    <string name="deg_value">角度值</string>
+    <string name="rag_value">弧度值</string>
+
+    <string name="status_bar_size">状态栏大小：</string>
+    <string name="toolbar_size">Toolbar大小：</string>
+    <string name="content_size">内容区域大小</string>
+    <string name="navigationbar_size">导航栏大小：</string>
+    <string name="screen_display_size">屏幕分辨率：</string>
+    <string name="colors">颜色</string>
+    <string name="colors_desc">安卓开发中使用的颜色表达都是#FFFFFFFF这种，也就是分为四个颜色通道，每个通道的值都是 0x00 – 0xFF，一个完整的颜色就是由4个通道的值组成的：</string>
+    <string name="color_alpha">Alpha:</string>
+    <string name="color_red">Red:</string>
+    <string name="color_green">Green:</string>
+    <string name="color_blue">Blue:</string>
+    <string name="unit">单位</string>
+    <string name="unit_desc">即安卓中常见的一些单位，如dp/dpi,px,sp,pt等,而px就是我们常说的像素单位</string>
+    <string name="slide">滑动</string>
+    <string name="slide_desc">在交互中，除了点击之外，最常用的就是滑动了，而安卓中的滑动有:\n
+        最小滑动距离：即超过这个距离才算滑动\n
+        滑动速度：用来区分是否为快速滑动</string>
+    <string name="slide_x_measure_speed">横向滑动测量滑动速度</string>
+</resources>

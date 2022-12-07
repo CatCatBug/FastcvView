@@ -3,10 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/drawable/shape_content_bg.xml" value="0.1625" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_native.xml" value="0.2828125" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_theoretical_basis.xml" value="0.25" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_colors.xml" value="0.28177083333333336" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_coordinate_system.xml" value="0.221875" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_deg_and_rad.xml" value="0.2921875" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_screen_area.xml" value="0.25" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_unit.xml" value="0.3567708333333333" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/ic_app.xml" value="0.1975" />
         <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/selector_main_bt_bg.xml" value="0.1975" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_color_alpha.xml" value="0.112" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_color_blue.xml" value="0.112" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_color_green.xml" value="0.112" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_color_red.xml" value="0.112" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_item_bg.xml" value="0.1975" />
         <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_main_bt_normal.xml" value="0.1975" />
         <entry key="..\:/Dev/FastcvView/app/src/main/res/drawable/shape_main_bt_pressed.xml" value="0.1975" />
         <entry key="..\:/Dev/FastcvView/app/src/main/res/layout/activity_main.xml" value="0.34739583333333335" />
+        <entry key="..\:/Dev/FastcvView/app/src/main/res/layout/item_view.xml" value="0.33" />
+        <entry key="..\:/Dev/FastcvView/app/src/native/res/layout/activity_custom.xml" value="0.3619791666666667" />
       </map>
     </option>
   </component>
