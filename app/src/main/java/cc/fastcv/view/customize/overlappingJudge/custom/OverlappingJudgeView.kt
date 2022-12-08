@@ -208,24 +208,25 @@ class OverlappingJudgeView : View {
                 if (vibrator?.hasVibrator() == true) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                         vibrator!!.vibrate(
-                            VibrationEffect.createWaveform(
-                                longArrayOf(
-                                    1000,
-                                    1000,
-                                    1000,
-                                    1000
-                                ),
-                                intArrayOf(
-                                    VibrationEffect.DEFAULT_AMPLITUDE,
-                                    VibrationEffect.DEFAULT_AMPLITUDE,
-                                    VibrationEffect.DEFAULT_AMPLITUDE,
-                                    VibrationEffect.DEFAULT_AMPLITUDE
-                                ),
-                                0
+                            VibrationEffect.createOneShot(
+                                1000,
+                                VibrationEffect.DEFAULT_AMPLITUDE,
                             )
                         )
+
+                        //间接性震动
+//                        vibrator!!.vibrate(
+//                            VibrationEffect.createWaveform(
+//                                longArrayOf(
+//                                    500, 1000, 500, 1000, 500, 1000
+//                                ),
+//                                0
+//                            )
+//                        )
                     } else {
-                        vibrator!!.vibrate(longArrayOf(1000, 1000, 1000, 1000), 0)
+                        vibrator!!.vibrate(longArrayOf(0, 1000, 0, 1000), 0)
+                        //间接性震动
+//                        vibrator!!.vibrate(longArrayOf(1000, 1000, 1000, 1000), 0)
                     }
                 } else {
                     Log.e("TOP", "该设备没有震动器")
