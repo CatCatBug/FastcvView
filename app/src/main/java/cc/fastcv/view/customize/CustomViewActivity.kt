@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import cc.fastcv.view.R
 import cc.fastcv.view.adapter.ItemAdapter
+import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
 
 class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener {
@@ -14,6 +15,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom)
 
+
         val rvComponent = findViewById<RecyclerView>(R.id.rv_component)
         rvComponent.adapter = ItemAdapter(resources.getStringArray(R.array.custom_view_list).toMutableList(),this)
     }
@@ -21,6 +23,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
     override fun onItemClick(position: Int) {
         when(position) {
             0 -> startActivity(Intent(this,TheoreticalBasisActivity::class.java))
+            1 -> startActivity(Intent(this, OverlappingJudgeActivity::class.java))
             else -> return
         }
     }
