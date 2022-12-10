@@ -40,4 +40,19 @@
         最小滑动距离：即超过这个距离才算滑动\n
         滑动速度：用来区分是否为快速滑动</string>
     <string name="slide_x_measure_speed">横向滑动测量滑动速度</string>
+    <string name="up_pull_config">上拉配置属性</string>
+    <string name="reset_ui">重置绘制内容</string>
+    <string name="set_canvas_color">设置画板颜色:</string>
+    <string name="config_paint">设置着色器：</string>
+    <string name="linear_gradient">线性渐变</string>
+    <string name="radial_gradient">辐射渐变</string>
+    <string name="sweep_gradient">扫描渐变</string>
+    <string name="bitmap">Bitmap</string>
+    <string name="compose_shader">混合着色器</string>
+    <string name="tile_mode">着色模式</string>
+    <string name="clamp">CLAMP</string>
+    <string name="mirror">MIRROR</string>
+    <string name="repeat">REPEAT</string>
+    <string name="bitmap_select">Bitmap选样</string>
+    <string name="compose_bitmap">选择一种渐变与Bitmap混合</string>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="cc.fastcv.view">
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -25,9 +25,18 @@
             </intent-filter>
         </activity>
         <activity android:name=".customize.CustomViewActivity" />
-        <activity android:name=".customize.theoreticalBasis.TheoreticalBasisActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".customize.theoreticalBasis.TheoreticalBasisActivity"
+            android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".customize.overlappingJudge.OverlappingJudgeActivity" android:screenOrientation="portrait"
+        <activity
+            android:name=".customize.overlappingJudge.OverlappingJudgeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".customize.drawSpell.DrawSpellActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
     </application>
 

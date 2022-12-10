@@ -166,7 +166,7 @@ class OverlappingJudgeView : View {
                 //中上
                 val length = rectF.top - circleY
                 length <= mRadius
-            } else if (circleX >= rectF.top && circleX <= rectF.bottom) {
+            } else if (circleY >= rectF.top && circleY <= rectF.bottom) {
                 //中中 进入中中之前肯定接触了  不处理
                 true
             } else {

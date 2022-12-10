@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import cc.fastcv.view.R
 import cc.fastcv.view.adapter.ItemAdapter
+import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
 
@@ -24,6 +25,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
         when(position) {
             0 -> startActivity(Intent(this,TheoreticalBasisActivity::class.java))
             1 -> startActivity(Intent(this, OverlappingJudgeActivity::class.java))
+            2 -> startActivity(Intent(this, DrawSpellActivity::class.java))
             else -> return
         }
     }
