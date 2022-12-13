@@ -195,7 +195,6 @@ class DrawSpellView : View {
     }
 
     fun setBitmapSize(size: Float) {
-        spell.recycle()
         spell = buildBitmap(size)
     }
 
