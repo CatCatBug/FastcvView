@@ -5,6 +5,7 @@
         <item>理论基础</item>
         <item>重合判断</item>
         <item>着色器</item>
+        <item>Xfermode</item>
     </string-array>
 
     <!--    原生View的展示列表    -->

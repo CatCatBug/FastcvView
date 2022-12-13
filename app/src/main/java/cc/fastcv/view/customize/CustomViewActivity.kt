@@ -9,6 +9,7 @@ import cc.fastcv.view.adapter.ItemAdapter
 import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
+import cc.fastcv.view.customize.xfermode.XfermodeActivity
 
 class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener {
 
@@ -26,6 +27,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             0 -> startActivity(Intent(this,TheoreticalBasisActivity::class.java))
             1 -> startActivity(Intent(this, OverlappingJudgeActivity::class.java))
             2 -> startActivity(Intent(this, DrawSpellActivity::class.java))
+            3 -> startActivity(Intent(this, XfermodeActivity::class.java))
             else -> return
         }
     }
