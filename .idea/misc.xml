@@ -6,11 +6,15 @@
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/drawable/ic_spell.xml" value="0.188" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/drawable/shape_bitmap_selected_bg.xml" value="0.19" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/drawable/shape_content_bg.xml" value="0.1625" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_corner_frame_layout.xml" value="0.23802083333333332" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_draw_spell.xml" value="0.4271523178807947" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_native.xml" value="0.2828125" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_overlapping_judge.xml" value="0.3567708333333333" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_round_progress_bar.xml" value="0.25833333333333336" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_star.xml" value="0.22395833333333334" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_theoretical_basis.xml" value="0.25" />
+        <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/activity_turntable.xml" value="0.20729166666666668" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_colors.xml" value="0.28177083333333336" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_coordinate_system.xml" value="0.221875" />
         <entry key="..\:/Dev/FastcvView/app/src/custom/res/layout/basis_layout_deg_and_rad.xml" value="0.2921875" />

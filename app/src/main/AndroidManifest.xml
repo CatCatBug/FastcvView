@@ -42,6 +42,18 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.star.StarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.turntable.TurntableActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.cornerFrameLayout.CornerFrameLayoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

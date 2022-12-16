@@ -135,11 +135,33 @@ class AngleCalcView : View {
         val xInView = event.x
         val yInView = event.y
         val deg = getRotationBetweenLines(mWeight / 2.0f, mHeight / 2.0f, xInView, yInView)
+//        val deg = getAgree(mWeight / 2.0f, mHeight / 2.0f, xInView, yInView)
         if (deg != mDeg) {
             mDeg = deg
             callback?.onAngleChange(mDeg)
             invalidate()
         }
+    }
+
+    private fun getAgree(
+        x: Float, y: Float, centerX: Float,
+        centerY: Float
+    ): Float {
+        return if (x < centerX && y < centerY) {//a-180
+            Math.toDegrees((atan(((centerY - y) / (centerX - x)).toDouble())))
+                .toFloat() - 180
+        } else if (x > centerX && y < centerY) {//-a
+            -Math.toDegrees((atan(((centerY - y) / (x - centerX)).toDouble())))
+                .toFloat()
+        } else if (x < centerX && y > centerY) {//180-a
+            180 - Math.toDegrees((atan(((y - centerY) / (centerX - x)).toDouble())))
+                .toFloat()
+        } else if (x > centerX && y > centerY) {//a
+            Math.toDegrees((atan(((y - centerY) / (x - centerX)).toDouble())))
+                .toFloat()
+        } else
+            0F
+
     }
 
     //获取从起点线到终点线经过的角度

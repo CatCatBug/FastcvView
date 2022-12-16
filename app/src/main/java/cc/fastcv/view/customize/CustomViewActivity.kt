@@ -6,9 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import cc.fastcv.view.R
 import cc.fastcv.view.adapter.ItemAdapter
+import cc.fastcv.view.customize.cornerFrameLayout.CornerFrameLayoutActivity
 import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
+import cc.fastcv.view.customize.star.StarActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
+import cc.fastcv.view.customize.turntable.TurntableActivity
 import cc.fastcv.view.customize.xfermode.XfermodeActivity
 
 class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener {
@@ -28,6 +31,9 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             1 -> startActivity(Intent(this, OverlappingJudgeActivity::class.java))
             2 -> startActivity(Intent(this, DrawSpellActivity::class.java))
             3 -> startActivity(Intent(this, XfermodeActivity::class.java))
+            4 -> startActivity(Intent(this, StarActivity::class.java))
+            5 -> startActivity(Intent(this, TurntableActivity::class.java))
+            6 -> startActivity(Intent(this, CornerFrameLayoutActivity::class.java))
             else -> return
         }
     }
