@@ -55,4 +55,7 @@
     <string name="repeat">REPEAT</string>
     <string name="bitmap_select">Bitmap选样</string>
     <string name="compose_bitmap">选择一种渐变与Bitmap混合</string>
+    <string name="check_hardwareAccelerated">硬件加速检测</string>
+    <string name="hardware_accelerated_desc"><![CDATA[Android从3.0（API Level 11）开始，在绘制View的时候支持硬件加速，充分利用GPU的特性，使得绘制更加平滑，但是会多消耗一些内存。]]></string>
+    <string name="window_is_hardware_accelerated">当前Window是否开启了硬件加速：</string>
 </resources>

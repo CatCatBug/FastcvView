@@ -54,6 +54,14 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.roundprogressbar.RoundProgressBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.pathFillType.PathFillTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

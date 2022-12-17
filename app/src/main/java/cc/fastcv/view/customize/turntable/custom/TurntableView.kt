@@ -28,6 +28,10 @@ class TurntableView : View {
         defStyleRes: Int
     ) : super(context, attrs, defStyleAttr, defStyleRes)
 
+
+    private var mMax = 0
+    private var mMin = -180
+
     private var mViewHeight = 0.0f
     private var mViewWidth = 0.0f
     private var mCircleCenterPoint: PointF = PointF(0.0f, 0.0f)
@@ -250,26 +254,21 @@ class TurntableView : View {
                 if (inCircleArea(event) && !isUselessEvent) {
                     val curDeg = calcDeg(event)
                     var dDeg = curDeg - downDegrees
-                    Log.d("xcl_debug", "onTouchEvent0: downDegrees = $downDegrees  curDeg = $curDeg dDeg = $dDeg")
                     if (abs(dDeg) > 300) {
                         //存在0-360的转变
                         dDeg = (360 - abs(dDeg))*(dDeg/300)
                     }
                     downDegrees = curDeg
 
-                    Log.d("xcl_debug", "onTouchEvent1: dDeg = $dDeg")
-
-                    if (startDegrees >= 0) {
+                    if (startDegrees >= mMax) {
                         dDeg *= (100 - startDegrees) / 100.0f
                     }
 
-                    if (startDegrees <= -180) {
-                        dDeg *= (100 - (-180 - startDegrees)) / 100.0f
+                    if (startDegrees <= mMin) {
+                        dDeg *= (100 - (mMin - startDegrees)) / 100.0f
                     }
-                    Log.d("xcl_debug", "onTouchEvent2: dDeg = $dDeg")
 
                     startDegrees += dDeg
-                    Log.d("xcl_debug", "onTouchEvent: startDegrees = $startDegrees")
                     if (!startDegrees.isNaN()) {
                         invalidate()
                     }
@@ -280,11 +279,10 @@ class TurntableView : View {
             MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
                 parent.requestDisallowInterceptTouchEvent(false)
                 if (!startDegrees.isNaN()) {
-                    var fl = 0
-                    fl = if (startDegrees >= 0) {
-                        0
-                    } else if (startDegrees <= -180) {
-                        -180
+                    var fl: Int = if (startDegrees >= mMax) {
+                        mMax
+                    } else if (startDegrees <= mMin) {
+                        mMin
                     } else {
                         startDegrees.roundToInt()
                     }
@@ -299,7 +297,6 @@ class TurntableView : View {
                     }
                     correctionAngle(startDegrees,fl*1.0f)
                     startDegrees = fl*1.0f
-                    Log.d("xcl_debug", "onTouchEvent: --------- startDegrees = $startDegrees")
                 }
             }
             else -> {}

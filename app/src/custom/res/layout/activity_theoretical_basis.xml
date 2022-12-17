@@ -31,45 +31,35 @@
             tools:visibility="gone"
             layout="@layout/basis_layout_unit" />
 
+        <include
+            tools:visibility="gone"
+            layout="@layout/basis_layout_slide" />
+
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/slide" />
+            android:text="@string/check_hardwareAccelerated" />
 
         <androidx.appcompat.widget.AppCompatTextView
             style="@style/Paragraph"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/slide_desc" />
+            android:text="@string/hardware_accelerated_desc" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:id="@+id/tv_min_distance"
+            android:text="@string/window_is_hardware_accelerated"
             style="@style/Paragraph" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/slide_x_measure_speed"
-            style="@style/Paragraph" />
-
-        <cc.fastcv.view.customize.theoreticalBasis.custom.SimpleSpeedometer
-            android:layout_width="match_parent"
-            android:id="@+id/ss_slide"
-            android:layout_height="100dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/shape_item_bg" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:id="@+id/tv_speed"
+            android:id="@+id/tv_hs"
             style="@style/Paragraph" />
 
     </LinearLayout>

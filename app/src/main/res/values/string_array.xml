@@ -3,12 +3,14 @@
     <!--    自定义View的展示列表    -->
     <string-array name="custom_view_list">
         <item>理论基础</item>
+        <item>Path填充模式</item>
         <item>重合判断</item>
         <item>着色器</item>
         <item>Xfermode</item>
         <item>画星星</item>
         <item>刻度转盘</item>
         <item>圆角布局</item>
+        <item>圆角进度条</item>
     </string-array>
 
     <!--    原生View的展示列表    -->

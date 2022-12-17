@@ -151,6 +151,10 @@ class TheoreticalBasisActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.tv_speed).text = "当前速度为：$speed"
             }
         })
+
+        findViewById<TextView>(R.id.tv_hs).apply {
+            text = "$isHardwareAccelerated"
+        }
     }
 
 
