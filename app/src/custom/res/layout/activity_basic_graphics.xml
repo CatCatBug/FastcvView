@@ -8,11 +8,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <cc.fastcv.view.customize.pathFillType.PathFillTypeView
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal" />
+
+
 
     </LinearLayout>
 

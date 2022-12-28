@@ -3,6 +3,7 @@ package cc.fastcv.view.customize.roundprogressbar
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import cc.fastcv.view.R
+import cc.fastcv.view.customize.roundprogressbar.custom.LeafLoadingView
 import cc.fastcv.view.customize.roundprogressbar.custom.RoundProgressBar
 
 class RoundProgressBarActivity : AppCompatActivity() {
@@ -13,6 +14,10 @@ class RoundProgressBarActivity : AppCompatActivity() {
 
         findViewById<RoundProgressBar>(R.id.rpb).setOnClickListener {
             (it as RoundProgressBar).run()
+        }
+
+        findViewById<LeafLoadingView>(R.id.llv).setOnClickListener {
+            (it as LeafLoadingView).run()
         }
     }
 
