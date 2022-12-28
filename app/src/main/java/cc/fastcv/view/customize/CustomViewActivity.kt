@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import cc.fastcv.view.R
 import cc.fastcv.view.adapter.ItemAdapter
+import cc.fastcv.view.customize.bezierCurve.BezierCurveActivity
 import cc.fastcv.view.customize.cornerFrameLayout.CornerFrameLayoutActivity
 import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
@@ -38,6 +39,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             6 -> startActivity(Intent(this, TurntableActivity::class.java))
             7 -> startActivity(Intent(this, CornerFrameLayoutActivity::class.java))
             8 -> startActivity(Intent(this, RoundProgressBarActivity::class.java))
+            9 -> startActivity(Intent(this, BezierCurveActivity::class.java))
             else -> return
         }
     }

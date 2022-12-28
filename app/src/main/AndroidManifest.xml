@@ -62,6 +62,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.bezierCurve.BezierCurveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>
