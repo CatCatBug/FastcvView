@@ -66,6 +66,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.radarView.RadarViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

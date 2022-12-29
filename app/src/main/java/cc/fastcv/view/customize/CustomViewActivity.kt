@@ -11,6 +11,7 @@ import cc.fastcv.view.customize.cornerFrameLayout.CornerFrameLayoutActivity
 import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
 import cc.fastcv.view.customize.pathFillType.PathFillTypeActivity
+import cc.fastcv.view.customize.radarView.RadarViewActivity
 import cc.fastcv.view.customize.roundprogressbar.RoundProgressBarActivity
 import cc.fastcv.view.customize.star.StarActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
@@ -40,6 +41,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             7 -> startActivity(Intent(this, CornerFrameLayoutActivity::class.java))
             8 -> startActivity(Intent(this, RoundProgressBarActivity::class.java))
             9 -> startActivity(Intent(this, BezierCurveActivity::class.java))
+            10 -> startActivity(Intent(this, RadarViewActivity::class.java))
             else -> return
         }
     }
