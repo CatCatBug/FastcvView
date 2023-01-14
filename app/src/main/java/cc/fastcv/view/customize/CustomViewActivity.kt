@@ -15,6 +15,7 @@ import cc.fastcv.view.customize.pathMeasure.PathMeasureActivity
 import cc.fastcv.view.customize.radarView.RadarViewActivity
 import cc.fastcv.view.customize.roundprogressbar.RoundProgressBarActivity
 import cc.fastcv.view.customize.star.StarActivity
+import cc.fastcv.view.customize.text.TextActivity
 import cc.fastcv.view.customize.theoreticalBasis.TheoreticalBasisActivity
 import cc.fastcv.view.customize.turntable.TurntableActivity
 import cc.fastcv.view.customize.xfermode.XfermodeActivity
@@ -44,6 +45,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             9 -> startActivity(Intent(this, BezierCurveActivity::class.java))
             10 -> startActivity(Intent(this, RadarViewActivity::class.java))
             11 -> startActivity(Intent(this, PathMeasureActivity::class.java))
+            12 -> startActivity(Intent(this, TextActivity::class.java))
             else -> return
         }
     }

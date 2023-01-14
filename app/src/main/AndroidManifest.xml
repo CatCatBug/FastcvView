@@ -74,6 +74,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".customize.text.TextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Activity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

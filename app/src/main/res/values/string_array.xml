@@ -14,6 +14,7 @@
         <item>贝塞尔曲线</item>
         <item>雷达图</item>
         <item>搜索加载动画</item>
+        <item>文字显示</item>
     </string-array>
 
     <!--    原生View的展示列表    -->
