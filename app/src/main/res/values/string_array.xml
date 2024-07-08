@@ -15,10 +15,12 @@
         <item>雷达图</item>
         <item>搜索加载动画</item>
         <item>文字显示</item>
+        <item>外切圆</item>
     </string-array>
 
     <!--    原生View的展示列表    -->
     <string-array name="native_view_list">
         <item>TextView</item>
+        <item>跑马灯</item>
     </string-array>
 </resources>

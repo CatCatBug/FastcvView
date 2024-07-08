@@ -78,6 +78,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/Activity"
             tools:ignore="LockedOrientationActivity" />
+        <activity android:name=".native.marquee.MarqueeTextViewActivity" />
+        <activity android:name=".native.NativeViewActivity" />
+        <activity android:name=".customize.inscribedCircle.InscribedCircleActivity" />
     </application>
 
 </manifest>

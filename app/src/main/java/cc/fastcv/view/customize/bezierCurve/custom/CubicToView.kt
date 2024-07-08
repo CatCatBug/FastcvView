@@ -105,6 +105,7 @@ class CubicToView : View {
             path.reset()
             path.moveTo(points[0]!!.x, points[0]!!.y)
             path.cubicTo(points[1]!!.x, points[1]!!.y, points[2]!!.x, points[2]!!.y, points[3]!!.x, points[3]!!.y)
+
             canvas?.drawPath(path, paint)
         }
     }

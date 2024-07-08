@@ -9,6 +9,7 @@ import cc.fastcv.view.adapter.ItemAdapter
 import cc.fastcv.view.customize.bezierCurve.BezierCurveActivity
 import cc.fastcv.view.customize.cornerFrameLayout.CornerFrameLayoutActivity
 import cc.fastcv.view.customize.drawSpell.DrawSpellActivity
+import cc.fastcv.view.customize.inscribedCircle.InscribedCircleActivity
 import cc.fastcv.view.customize.overlappingJudge.OverlappingJudgeActivity
 import cc.fastcv.view.customize.pathFillType.PathFillTypeActivity
 import cc.fastcv.view.customize.pathMeasure.PathMeasureActivity
@@ -46,6 +47,7 @@ class CustomViewActivity : AppCompatActivity(), ItemAdapter.OnItemClickListener 
             10 -> startActivity(Intent(this, RadarViewActivity::class.java))
             11 -> startActivity(Intent(this, PathMeasureActivity::class.java))
             12 -> startActivity(Intent(this, TextActivity::class.java))
+            13 -> startActivity(Intent(this, InscribedCircleActivity::class.java))
             else -> return
         }
     }
